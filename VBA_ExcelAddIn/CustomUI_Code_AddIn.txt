@@ -1,0 +1,215 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+             <tab id="FileName_CustomTab1" label="Advanced Tools">
+                                    <group id="Filename_Group1.1" label="Additional Formulas">
+                                    <separator id="Separatora" visible="false"/>
+                                    <separator id="Separatorb" visible="false"/>
+                                    <separator id="Separatorc" visible="false"/>
+                                    <separator id="Separatord" visible="false"/>
+                                           <button id="Button1.1"
+                                                label="Formula suggestion"
+                                                size="large"
+                                                onAction = "Group04"
+                                                imageMso="DataTypeCalculatedColumn"
+                                                screentip="Group 4"
+                                                supertip="Suggests descriptive statistics based on selected data" />
+                                           <separator id="Separatore" visible="false"/>
+                                           <separator id="Separatorf" visible="false"/>
+                                           <button id="Button1.2"
+                                                label="Formula library"
+                                                size="large"
+                                                onAction="Group05"
+                                                imageMso="DataTypeCalculatedColumn"
+                                                screentip="Group 5"
+                                                supertip="Opens up a menu of custom formulas" />
+                                    <separator id="Separatorg" visible="false"/>
+                                    <separator id="Separatorh" visible="false"/>   
+                                    </group>
+                                    <group id="Filename_Group1.2" label="Financial Info">
+                                    <separator id="Separatori" visible="false"/>
+                                    <separator id="Separatorj" visible="false"/>
+                                          <button id="Button1.3"
+                                                label="Financial Info"
+                                                size="large"
+                                                onAction="Group09"
+                                                imageMso="ChartTrendline"
+                                                screentip="Group 9"
+                                                supertip="Web scrapping financial info + visualization" />
+                                          <separator id="Separatork" visible="false"/>
+                                          <separator id="Separatorl" visible="false"/>
+             <!--                             
+                                          <button id="Button1.4"
+                                                label="Currency converter 1"
+                                                size="large"
+                                                onAction="Group10"
+                                                imageMso="DataTypeCurrency"
+                                                screentip="Group 10"
+                                                supertip="Currency converter with buttons" />
+                                          <button id="Button1.5"
+                                                label="Currency converter 2"
+                                                size="large"
+                                                onAction="Group06"
+                                                imageMso="DataTypeCurrency"
+                                                screentip="Group 6"
+                                                supertip="Currency converter with web scrapping" />
+             -->                             
+                                    <gallery id="gallery2" 
+                                               imageMso = "DataTypeCurrency" 
+                                               label="Currency Converters"
+                                               size="large" 
+                                               onAction="Gallery_OnAction1"
+                                               supertip="Click to see the available currency converters"> 
+                                                    <button id="Button1.14"
+                                                            imageMso = "DataTypeCurrency" 
+                                                            label="Currency Converter 1" 
+                                                            onAction="gallery_Group10"
+                                                            screentip="Group 6"
+                                                            supertip="Currency converter with web scrapping from Bloomberg"/>
+                                                    <button id="Button1.15"
+                                                            imageMso = "DataTypeCurrency" 
+                                                            label="Currency Converter 2" 
+                                                            onAction="gallery_Group06"
+                                                            screentip="Group 10"
+                                                            supertip="Currency converter with web scrapping from Bloomberg"/>
+                                    </gallery>
+                                        
+                                    <separator id="Separatorm" visible="false"/>
+                                    <separator id="Separatorn" visible="false"/>
+                                    </group>
+                                    <group id="Filename_Group1.3" label="Online data">
+                                    <separator id="Separators" visible="false"/>
+                                    <separator id="Separatort" visible="false"/>
+                                          <button id="Button1.6"
+                                                label="Twitter Data"
+                                                size="large"
+                                                onAction="Group02"
+                                                image="twitter"
+                                                screentip="Group 2"
+                                                supertip="Import Twitter data to Excel" />
+                                          <separator id="Separatoro" visible="false"/>
+                                          <separator id="Separatorp" visible="false"/>
+                                          <button id="space" size="normal" label="&#xA;"/>
+                                          <dropDown id="DropDown1" label="Iéseg Schedules"
+                                                screentip="Group 1"
+                                                supertip="Import iéseg-online schedule data to Excel"
+                                                onAction= "fncOnActionDrop">
+                                               <item id="item1" label="Abdelgelil" />
+                                               <item id="item2" label="Ahuile" />
+                                               <item id="item3" label="Badhani" />
+                                               <item id="item4" label="Bannem" />
+                                               <item id="item5" label="Beyer" />
+                                               <item id="item6" label="Borchert" />
+                                               <item id="item7" label="Castillo Acosta" />
+                                               <item id="item8" label="Celi" />
+                                               <item id="item9" label="Dam" />
+                                               <item id="item10" label="Fernandes" />
+                                               <item id="item11" label="Gupta" />
+                                               <item id="item12" label="Gutierrez" />
+                                               <item id="item13" label="Gzraryan" />
+                                               <item id="item14" label="Jalilain" />
+                                               <item id="item15" label="Kalapati" />
+                                               <item id="item16" label="Kamal" />
+                                               <item id="item17" label="Kusterer" />
+                                               <item id="item18" label="Lopez zeron" />
+                                               <item id="item19" label="Ma" />
+                                               <item id="item20" label="Masrouji" />
+                                               <item id="item21" label="Montenegro Vela" />
+                                               <item id="item22" label="Motyl" />
+                                               <item id="item23" label="Olivera" />
+                                               <item id="item24" label="Olivier" />
+                                               <item id="item25" label="Pavot" />
+                                               <item id="item26" label="Payet" />
+                                               <item id="item27" label="Polanco Roque" />
+                                               <item id="item28" label="Purushothaman" />
+                                               <item id="item29" label="Razo" />
+                                               <item id="item30" label="Sharma" />
+                                               <item id="item31" label="Thomas Emil" />
+                                               <item id="item32" label="Vandelaer" />
+                                               <item id="item33" label="Varghese" />
+                                               <item id="item34" label="Vrijghem" />
+                                               <item id="item35" label="Wijayaweera" />
+                                               <item id="item36" label="XIE" />
+                                               <item id="item37" label="Zambrano Llano" />
+                                               <item id="item38" label="Zong" />
+                                               <item id="item39" label="Hutin"/>
+                                           </dropDown>
+                                    <separator id="Separatorw" visible="false"/>
+                                    <separator id="Separatorx" visible="false"/>
+                                    </group>
+                                    <group id="Filename_Group1.4" label="Data format">
+                                    <separator id="Separatoraa" visible="false"/>
+                                    <separator id="Separatorab" visible="false"/>
+                                    
+                   <!--                       <button id="Button1.8"
+                                                label="Heat chart 1"
+                                                size="large"
+                                                onAction="Group07a"
+                                                imageMso="AppointmentColorDialog"
+                                                screentip="Group 7a"
+                                                supertip="Apply heatmap on data" />
+                                          <separator id="Separatorq" visible="false"/>
+                                          <separator id="Separatorr" visible="false"/>
+                                          <button id="Button1.9"
+                                                label="Heat chart 2"
+                                                size="large"
+                                                onAction="Group07b"
+                                                imageMso="AppointmentColorDialog"
+                                                screentip="Group 7b"
+                                              supertip="Apply heatmap on data" />
+                   -->                               
+                                    <gallery id="gallery1" 
+                                               imageMso = "AppointmentColorDialog" 
+                                               label="Heat Maps"
+                                               size="large" 
+                                               onAction="Gallery_OnAction"
+                                               supertip="Click to see the available heat maps"> 
+                                                    <button id="Button1.12"
+                                                            imageMso = "AppointmentColorDialog" 
+                                                            label="Heat map 1" 
+                                                            onAction="gallery_Group07a"
+                                                            screentip="Group 7a"
+                                                            supertip="Heat map with sample data"/>
+                                                    <button id="Button1.13"
+                                                            imageMso = "AppointmentColorDialog" 
+                                                            label="Heat map 2" 
+                                                            onAction="gallery_Group07b"
+                                                            screentip="Group 7b"
+                                                            supertip="Heat map on selected data"/>             
+                                    </gallery>                                                                                           
+                                              
+                                    <separator id="Separatorae" visible="false"/>
+                                    <separator id="Separatoraf" visible="false"/>
+                                    </group>
+                                    <group id="Filename_Group1.5" label="Wellbeing">
+                                    <separator id="Separatorai" visible="false"/>
+                                    <separator id="Separatoraj" visible="false"/>
+                                    <button id="Button1.10"
+                                                label="Psychological Questionnaire"
+                                                size="large"
+                                                onAction="Group08"
+                                                imageMso="DataGraphicEditItem"
+                                                screentip="Group 8"
+                                                supertip="Questionnaire with psychological analysis" />
+                                    <separator id="Separatoram" visible="false"/>
+                                    <separator id="Separatoran" visible="false"/>
+                                    </group>
+                                    <group id="Filename_Group1.6" label="Emailing">
+                                    <separator id="Separatoraq" visible="false"/>
+                                    <separator id="Separatorar" visible="false"/>
+                                    <button id="Button1.11"
+                                                label="Email data"
+                                                size="large"
+                                                onAction="Group03"
+                                                imageMso="CreateEmail"
+                                                screentip="Group 3"
+                                                supertip="Send data by email" />
+                                    <separator id="Separatoras" visible="false"/>
+                                    <separator id="Separatorat" visible="false"/>
+                                    <separator id="Separatorau" visible="false"/>
+                                    <separator id="Separatorav" visible="false"/>
+                                    </group>
+            </tab>
+       </tabs>
+    </ribbon>
+</customUI>
